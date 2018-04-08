@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    color: #291f1a;
+}
+
+/* NAWIGACJA */
+
+#menu {
+    background-color: #fff;
+    height: 60px;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+#menu ul > li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #1ac056;
+    transition: all 0.4s;
+}
+
+#menu ul > li a:hover {
+    color: #222;
+}
+
+/* HEADER */
+
+#tlo {
+    background-image: url("../img/header-background.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#naglowki {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.nazwisko {
+    color: #1ac056;
+    font-weight: bold;
+    
+}
+
+#naglowki > h2 {
+    color: #fff;
+    font-weight: 100;
+    margin: 0;
+    font-size: 34px;
+}
+
+/* O MNIE */
+
+#about {
+    background-color: #f9fcfe;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.5);
+}
+
+.header {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+    margin: 0;
+    padding: 30px;
+}
+
+#content {
+    width: 100%;
+    height: auto;
+}
+
+#about figure {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#about figure > img {
+    border: 10px solid #fff;
+    border-radius: 3px;
+    width:50%;
+    margin: 0;
+}
+
+#txt {
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* SKILLE */
+
+#skills {
+    background-color: #fff;
+    position: relative;
+    z-index: -2;
+}
+
+#skills p {
+    margin: 0 40px;
+}
+
+#language {
+    width: 100%;
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    margin: 30px auto;
+
+}
+
+/* PORTFOLIO */
+
+#pics {
+    width: 100%;
+    text-align: center;
+}
+
+.pic {
+    display: inline-block;
+    width: 30%;
+}
+
+.pic figure {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
