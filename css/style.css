@@ -190,20 +190,81 @@ h1 {
 
 #content {
     width: 100%;
-    /* text-align: center; */       /* SPRAWDZIĆ CZY DZIALA */
 }
 
 #personal, #postcard {
     display: inline-block;
     width: 50%;
-    margin: -2px
+    margin: -1px;
 }
 
-input, textarea {
-    width: 60%;
-    padding: 5px;
-    margin: 10px;
+#personal {
+    padding-left: 30px;
 }
+
+    .contact-block {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        margin: 100px 20px 0px 0px;
+        border: 2px solid #fff;
+        position: relative;
+    }
+    
+    .contact-block i {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+
+#postcard {
+    padding: 0px 60px; 
+}
+
+    input, textarea {
+        width: 100%;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #324c61;
+        color: #fff;
+        border: 0;
+        outline: none;
+        float: left;
+        border-radius: 2px;
+    }
+
+    input:focus, textarea:focus {
+        background-color: #4e708c;
+        border: 1px solid #1ac056;
+    }
+
+    input[type="submit"] {
+        width: 30%;
+        line-height: 40px;
+        float: right;
+        background-color: #1ac056;
+        color: #fff;
+        text-transform: uppercase;
+        border: 0;
+        outline: 0;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 0;
+    }
+
+/* FOOTER */
+
+footer {
+    background-color: #102a40;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid black;
+}
+
 
 
 

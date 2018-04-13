@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Kamil Korzeniak</title>
-
+    
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700|Roboto:100,400,700&amp;subset=latin-ext" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -65,7 +67,9 @@
             Moje <span class="green">umiejętności</span>
         </h2>
         
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit provident, itaque, officiis nihil vitae beatae animi laborum ab cum architecto fuga earum obcaecati? Velit, sunt pariatur est dolorum porro, neque aspernatur voluptate itaque rerum temporibus eum doloribus maxime dolor deserunt quaerat nulla optio praesentium sed voluptates iure. Mollitia suscipit dolorum aliquid, est, nisi nulla quis qui, sapiente totam ad impedit expedita eum. Nobis unde natus tempora ex recusandae, ea, molestiae! Sed non facilis quod dolorum ducimus quam, vitae autem quasi sequi quis, nam dicta consequuntur explicabo obcaecati debitis, exercitationem nesciunt ratione placeat repudiandae nihil numquam porro. Sit, laudantium, fugit.</p>
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit provident, itaque, officiis nihil vitae beatae animi laborum ab cum architecto fuga earum obcaecati? Velit, sunt pariatur est dolorum porro, neque aspernatur voluptate itaque rerum temporibus eum doloribus maxime dolor deserunt quaerat nulla optio praesentium sed voluptates iure. Mollitia suscipit dolorum aliquid, est, nisi nulla quis qui, sapiente totam ad impedit expedita eum. Nobis unde natus tempora ex recusandae, ea, molestiae! Sed non facilis quod dolorum ducimus quam, vitae autem quasi sequi quis, nam dicta consequuntur explicabo obcaecati debitis, exercitationem nesciunt ratione placeat repudiandae nihil numquam porro. Sit, laudantium, fugit.</p>
+        </article>
         
       <div id="language">
             <div class="icon">
@@ -131,28 +135,41 @@
                 e-mail: korzeniak.kamil@gmail.com
                 </p>
 
-                <div class="contact-block" id="fb"></div>
-                <div class="contact-block" id="gplus"></div>
-                <div class="contact-block" id="tw"></div>
-                <div class="contact-block" id="lin"></div>
+                <div class="contact-block" id="fb">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="contact-block" id="gplus">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </div>
+                <div class="contact-block" id="tw">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div class="contact-block" id="lin">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
             </div>
 
             <div id="postcard">
                  <form action="https://formspree.io/korzeniak.kamil@gmail.com" method="POST">
                  
-                 <input type="text" name="name" id="name">
-                 <input type="text" name="mail" id="mail">
-                 <textarea name="message" cols="30" rows="10" id="message"></textarea>
-                 
-                 <input type="submit">
-                 
-                 
+                     <input type="text" name="name" id="name" placeholder="Imię i nazwisko" onfocus="this.placeholder=''" onblur="this.placeholder='Imię i nazwisko'">
+
+                     <input type="text" name="mail" id="mail" placeholder="E-mail" onfocus="this.placeholder=''" onblur="this.placeholder='E-mail'">
+
+                     <textarea name="message" cols="30" rows="8" id="message" placeholder="Napisz wiadomość..." onfocus="this.placeholder=''" onblur="this.placeholder='Napisz wiadomość...'"></textarea>
+
+                     <input type="submit">
+
                 </form>
+                
             </div>
-        </div>
-        
+        </div> 
     </section>
 
+<!-- FOOTER -->
+    <footer>
+        Copyright &copy; Kamil KORZENIAK 
+    </footer>
 
 </body>
 </html>
