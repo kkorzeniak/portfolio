@@ -7,11 +7,36 @@ body {
     color: #291f1a;
 }
 
-/* NAWIGACJA */
+/* HELPERS */
+
+.green {
+    color: #1ac056;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+section {
+    padding: 30px 50px;
+}
+
+
+                                        /*.header ZROBIĆ TU PADDING DO ODNOSNIKOW, OGARNĄĆ CZY NIE ROZPIERDALA TO STRONY */
+.header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+    padding: 30px;
+    letter-spacing: 1px;
+}
+
+/* NAVIGATION */
 
 #menu {
     background-color: #fff;
-    height: 60px;
     position: fixed;
     z-index: 9;
     width: 100%;
@@ -44,16 +69,15 @@ body {
 
 /* HEADER */
 
-#tlo {
+#main-header {
     background-image: url("../img/header-background.jpg");
     background-size: cover;
     height: 100vh;
     background-position: center;
     background-attachment: fixed;
-    position: relative;
 }
 
-#naglowki {
+#inner-header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -69,65 +93,36 @@ h1 {
     margin: 0;
 }
 
-.nazwisko {
-    color: #1ac056;
-    font-weight: bold;
-    
-}
-
-#naglowki > h2 {
+#inner-header h2 {
     color: #fff;
     font-weight: 100;
     margin: 0;
-    font-size: 34px;
+    font-size: 40px;
 }
 
-/* O MNIE */
+/* ABOUT */
 
 #about {
+    text-align: center;
     background-color: #f9fcfe;
     box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.5);
 }
 
-.header {
-    text-align: center;
-    font-size: 34px;
-    font-weight: 400;
+#about figure,
+#about article {
     margin: 0;
-    padding: 30px;
-}
-
-#content {
-    width: 100%;
-    height: auto;
-}
-
-#about figure {
-    width: 50%;
     display: inline-block;
+                                        /* PO NADANIU WARTOSCI IN-LINE BLOCK OBRAZKI ZACHOWUJA SIE JAK TEKST I MOZNA JE WYSRODKOWAC ZA POMOCA TEXT ALIGNE CENTER */
+    width: 50%;
     float: left;
-    box-sizing: border-box;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 100px;
 }
 
-#about figure > img {
-    border: 10px solid #fff;
-    border-radius: 3px;
-    width:50%;
-    margin: 0;
-}
-
-#txt {
+#about figure img {
     width: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 30px;
 }
 
-.clear {
-    clear: both;
+#about article p {
+    text-align: left;
 }
 
 /* SKILLE */
@@ -139,7 +134,7 @@ h1 {
 }
 
 #skills p {
-    margin: 0 40px;
+    margin: 0 auto;
 }
 
 #language {
@@ -155,31 +150,60 @@ h1 {
 
 /* PORTFOLIO */
 
-#pics {
+#album {
     width: 100%;
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.pic {
+.project {
     display: inline-block;
+    height: 300px;
     width: 30%;
+    background-position: center;
+    background-size: cover;
+    margin: -2px;
 }
 
-.pic figure {
-    box-sizing: border-box;
-    margin: 0;
+#p1 {
+    background-image: url("../img/portfolio1.jpg");
 }
 
-img {
-    margin: 0;
+#p2 {
+    background-image: url("../img/portfolio2.jpg");
 }
 
+#p3 {
+    background-image: url("../img/portfolio4.jpg");
+}
 
+/* CONTACT */
 
+#contact {
+    background-color: #213b50;
+    color: #fff;
+}
 
+#contact h2 {
+    text-align: left;
+}
 
+#content {
+    width: 100%;
+    /* text-align: center; */       /* SPRAWDZIĆ CZY DZIALA */
+}
 
+#personal, #postcard {
+    display: inline-block;
+    width: 50%;
+    margin: -2px
+}
 
+input, textarea {
+    width: 60%;
+    padding: 5px;
+    margin: 10px;
+}
 
 
 
