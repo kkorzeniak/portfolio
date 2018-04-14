@@ -1,0 +1,69 @@
+@media all and (max-width: 992px) {
+
+    .project {
+        display: block;
+        width: 100%;
+    }
+    
+    input[type="submit"] {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    
+    /* HEADER */
+    h1 {
+        line-height: 65px;
+        margin-bottom: 30px;
+    }
+    
+    /* ABOUT */
+    #about {
+        position: relative;
+    }
+    
+    #about figure {
+        display: block;
+        /* margin-top: 50%; */
+    }
+    
+    .icon {
+        margin-bottom: 0px;
+    }
+    
+    /* CONTACT */
+    #contact .header {
+        padding-bottom: 0px;
+        padding-top: 0px;
+        text-align: center;
+    }
+    
+    #contact {
+        height: 650px;
+    }
+    
+    
+    #personal, #postcard {
+        /* display: block; */
+        width: 100%;
+    }
+    
+    #personal {
+        text-align: center;
+        padding: 0px;
+    }
+    
+    #postcard {
+        margin: auto;
+    }
+    
+    .contact-block {
+        margin: 10px 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    
+}

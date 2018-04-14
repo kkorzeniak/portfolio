@@ -112,7 +112,7 @@ h1 {
 #about article {
     margin: 0;
     display: inline-block;
-                                        /* PO NADANIU WARTOSCI IN-LINE BLOCK OBRAZKI ZACHOWUJA SIE JAK TEKST I MOZNA JE WYSRODKOWAC ZA POMOCA TEXT ALIGNE CENTER */
+                                        /* PO NADANIU WARTOSCI IN-LINE BLOCK OBRAZKI ZACHOWUJA SIE JAK TEKST I MOZNA JE WYSRODKOWAC ZA POMOCA TEXT ALIGN CENTER */
     width: 50%;
     float: left;
 }
@@ -163,6 +163,7 @@ h1 {
     background-position: center;
     background-size: cover;
     margin: -2px;
+    position: relative;
 }
 
 #p1 {
@@ -175,6 +176,41 @@ h1 {
 
 #p3 {
     background-image: url("../img/portfolio4.jpg");
+}
+
+.mask {
+    height: 100%;
+    background-color: rgba(50, 76, 97, 0.75);
+    padding: 15px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.mask:hover {
+    opacity: 1;
+}
+
+.project-info h3 { 
+    font-size: 150%;
+    margin: 5px 0px;
+
+}
+
+.project-info i {
+    font-size: 30px;
+}
+
+.border {
+    border: 1px solid #fff;
+    height: 100%;
+    position: relative;
+}
+
+.project-info {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    color: #fff;
 }
 
 /* CONTACT */
@@ -208,16 +244,32 @@ h1 {
         display: inline-block;
         margin: 100px 20px 0px 0px;
         border: 2px solid #fff;
-        position: relative;
+        text-align: center;
     }
     
     .contact-block i {
-        position: absolute;
-        width: 100%;
-        text-align: center;
         font-size: 30px;
+        line-height: 50px;
     }
     
+    #personal p a {
+        color: #1ac056;
+        text-decoration: underline;
+    }
+
+    #personal a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .contact-block:hover {
+        background-color: #1ac056;
+    }
+
+    #personal a:visited {
+        display: block;
+        color: #fff;
+    }
 
 #postcard {
     padding: 0px 60px; 
@@ -226,7 +278,7 @@ h1 {
     input, textarea {
         width: 100%;
         padding: 10px 20px;
-        margin: 10px;
+        margin: 10px 0px;
         background-color: #324c61;
         color: #fff;
         border: 0;
@@ -263,6 +315,8 @@ footer {
     width: 100%;
     text-align: center;
     border-top: 1px solid black;
+    padding: 10px;
+    
 }
 
 
