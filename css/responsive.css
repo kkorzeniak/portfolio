@@ -1,13 +1,36 @@
 @media all and (max-width: 992px) {
-
-    .project {
+    
+    .toggle {
         display: block;
+        text-align: right;
+    }
+    
+    #menu ul {
+    display: none;
+    }
+    
+    #menu #drop:checked + ul {
+        display: block;
+    }
+    
+    #menu ul li {
+        display: block;
+    }
+ 
+    #about figure,
+    #about article {
+        width: 100%;
+        display: block;
+    }
+    
+    .project {
         width: 100%;
     }
     
     input[type="submit"] {
         width: 40%;
     }
+
 }
 
 @media all and (max-width: 768px) {
@@ -22,13 +45,7 @@
     #about {
         position: relative;
     }
-    
-    #about figure {
-        display: block;
-        width: 100%;
-        /* margin-top: 50%; */
-    }
-    
+
     .icon {
         margin-bottom: 0px;
     }
@@ -46,7 +63,6 @@
     
     
     #personal, #postcard {
-        /* display: block; */
         width: 100%;
     }
     

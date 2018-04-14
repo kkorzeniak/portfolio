@@ -22,8 +22,11 @@ section {
     padding: 30px 50px;
 }
 
+.toggle,
+#drop {
+    display: none;
+}
 
-                                        /*.header ZROBIĆ TU PADDING DO ODNOSNIKOW, OGARNĄĆ CZY NIE ROZPIERDALA TO STRONY */
 .header {
     text-align: center;
     font-size: 40px;
